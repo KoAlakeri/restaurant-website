@@ -17,28 +17,96 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0 auto;
+  max-width: 1860px;
+  min-width:320px;
+  background: #fff;
+}
+
 header {
   font-family: "Amatic SC", cursive;
+  color: #fff;
+  background-color: #6bd3c2;
+  padding: 0em 0 30px;
+  text-align: left;
+  position: relative;
+  text-decoration: none;
 }
 
 h1 {
-  margin: 0 0 .5rem;
-  font-size: 1.5rem;
+  margin: 0 .5em;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: right;
+}
+
+/* nav */
+
+.nav {
+  display: none;
+  padding: 1em 3em 0em;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 3.25em;
+  float: left;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-label:hover .nav-icon-hover {
+  display: block;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+.nav-check:checked ~ .nav-label .nav-open,
+.nav-check:checked ~ .nav-label:hover .nav-close,
+.nav-label:hover .nav-icon {
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
   text-align: left;
+  list-style-type: none;
 }
 
 nav a {
-  margin: 0 0 .5rem;
-  display: block;
-  padding: .5em .75em;
-  color: #333;
+  padding: 1rem;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
   text-decoration: none;
 }
 
 nav a:hover {
-  background-color: #333;
   color: #fff;
+  background-color: #ffab55;
 }
+
+/* nav */
 
 .img-flex {
   display: block;
@@ -46,19 +114,21 @@ nav a:hover {
 }
 
 .banner {
-  background-color: #e2e2e2;
+  background-color: #6bd3c2;
   position: relative;
+  padding: none;
 }
 
 .content {
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(98, 188, 163, .5);
   display: inline-block;
+  font-family: "Amatic SC", cursive;
   text-align: center;
   border-radius: 20px;
   position: absolute;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #fff;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   top: 50%;
   left: 50%;
   padding: 0;
@@ -101,7 +171,6 @@ section {
 
   h1, nav {
     display: inline-block;
-    vertical-align: middle;
   }
 
 }
@@ -111,5 +180,9 @@ section {
   html {
     font-size: 130%;
     line-height: 1.5;
+  }
+
+  .content {
+    font-size: 4rem;
   }
 }
