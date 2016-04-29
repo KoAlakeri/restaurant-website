@@ -43,6 +43,10 @@ h1 {
 
 /* nav */
 
+ul {
+  list-style-type: none;
+}
+
 .nav {
   display: none;
   padding: 1em 3em 0em;
@@ -108,6 +112,8 @@ nav a:hover {
 
 /* nav */
 
+/* banner */
+
 .img-flex {
   display: block;
   width: 100%;
@@ -128,16 +134,122 @@ nav a:hover {
   position: absolute;
   font-size: 1rem;
   color: #fff;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -48%);
   top: 50%;
   left: 50%;
-  padding: 0;
+  padding: 1rem;
   width: 10em;
 }
 
-section {
-
+.contest-btn {
+  text-decoration: none;
+  font-size: .5rem;
+  position: relative;
+  border: 3px solid #ffab55;
+  padding: .6em;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 0%;
+  background-color: #6bd3c2;
+  color: #fff;
 }
+
+.contest-btn:hover {
+  background-color: #ffab55;
+}
+
+/* banner */
+
+/* section cards */
+
+main {
+  margin: 0rem 3rem 0rem 3rem;
+  padding-top: 1rem;
+}
+
+.linkcard {
+  text-decoration: none;
+}
+
+.cards ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.cards li {
+  height: 200px;
+  width: 50%;
+  position: relative;
+  float: left;
+  list-style: none;
+}
+
+.card-circle {
+  font-family: "Amatic SC", cursive;
+  position: absolute;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+}
+
+.card-text {
+  color: black;
+}
+
+.card-img {
+  position: absolute;
+  left: 50%;
+  width: 85%;
+  transform: translateX(-50%);
+}
+
+/* section cards */
+
+/* section breakpoint */
+
+.breakpoint {
+  position: center;
+  width: 100%;
+  margin-top: 3rem;
+  margin-left: none;
+}
+
+/*section student experiences */
+
+.section ul {
+  display: inline-block;
+}
+
+.section li {
+  height: 300px;
+  width: 50%;
+  position: relative;
+  float: left;
+  list-style: none;
+}
+
+.circle {
+  font-family: "Amatic SC", cursive;
+  position: absolute;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+}
+
+.card-text {
+  color: black;
+}
+
+.section-img {
+  position: absolute;
+  left: 50%;
+  width: 85%;
+  transform: translateX(-50%);
+}
+
+/* section student experiences */
 
 @media only screen and (min-width: 25em) {
 
@@ -169,10 +281,6 @@ section {
     line-height: 1.5;
   }
 
-  h1, nav {
-    display: inline-block;
-  }
-
 }
 
 @media only screen and (min-width: 90em) {
@@ -185,4 +293,14 @@ section {
   .content {
     font-size: 4rem;
   }
+
+  .cards li {
+    width: 25%;
+  }
+
+  .contest-btn {
+  padding-top: none;
+  font-size: 2rem;
+  border-radius: 50px;
+  border: 10px solid #ffab55;
 }
