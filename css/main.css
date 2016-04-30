@@ -213,12 +213,20 @@ main {
   position: center;
   width: 100%;
   margin-top: 3rem;
-  margin-left: none;
+  margin-left: 1rem;
 }
 
 /*section student experiences */
 
+section p {
+  font: normal 80%/1 sans-serif;
+  text-align: left;
+}
+
 .section ul {
+  margin-left: 0rem;
+  margin-right: 0;
+  padding: 0;
   display: inline-block;
 }
 
