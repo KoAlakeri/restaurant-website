@@ -163,12 +163,6 @@ nav a:hover {
 
 /* section cards */
 
-main {
-  margin-right: 3rem;
-  margin-left: 3rem;
-  padding-top: 1rem;
-}
-
 .linkcard {
   text-decoration: none;
 }
@@ -214,7 +208,6 @@ main {
   position: center;
   width: 100%;
   margin-top: 3rem;
-  margin-left: 1rem;
 }
 
 /* section student experiences */
@@ -225,15 +218,12 @@ section p {
 }
 
 .section ul {
-  margin-left: 0rem;
-  margin-right: 0;
-  padding: 0;
-  display: inline-block;
+  display: block;
 }
 
 .section li {
   height: 300px;
-  width: 50%;
+  width: 45%;
   position: relative;
   float: left;
   list-style: none;
@@ -245,6 +235,7 @@ section p {
   font-size: 1rem;
   color: #000;
   text-align: center;
+  padding: .5rem;
 }
 
 .card-text {
