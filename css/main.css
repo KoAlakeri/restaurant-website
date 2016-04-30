@@ -28,7 +28,7 @@ header {
   font-family: "Amatic SC", cursive;
   color: #fff;
   background-color: #6bd3c2;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   text-align: left;
   position: relative;
   text-decoration: none;
@@ -38,7 +38,7 @@ h1 {
   margin: 0 .5em;
   padding: 1rem;
   font-size: 2rem;
-  text-align: right;
+  text-align: left;
 }
 
 /* nav */
@@ -47,62 +47,44 @@ ul {
   list-style-type: none;
 }
 
+nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .nav {
+  position: absolute;
+  top: 2em;
+  right: 1.5em;
+  text-align: right;
   display: none;
-  padding: 1em 3em;
 }
 
 .nav-check {
   position: absolute;
-  top: -3em;
+  top: -5em;
 }
 
 .nav-check:checked ~ .nav {
   display: block;
 }
 
-.nav-label {
-  cursor: pointer;
-}
-
-.nav-open,
-.nav-close {
+.nav-label img {
   display: block;
-  width: 3.25em;
-  float: left;
-}
-
-.nav-close {
-  display: none;
-}
-
-.nav-label:hover .nav-icon-hover {
-  display: block;
-}
-
-.nav-check:checked ~ .nav-label .nav-close {
-  display: block;
-}
-
-.nav-check:checked ~ .nav-label .nav-open,
-.nav-check:checked ~ .nav-label:hover .nav-close,
-.nav-label:hover .nav-icon {
-  display: none;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  list-style-type: none;
-}
-
-nav a {
-  padding: 1rem;
-  display: inline-block;
   width: 100%;
-  color: #fff;
-  text-decoration: none;
+}
+
+.nav-check:checked ~ .hamburger-btn {
+  background-color: #fff;
+}
+
+.hamburger-btn {
+  position: absolute;
+  top: 1em;
+  position: left;
+  right: 1.5em;
+  width: 30px;
+  cursor: pointer;
 }
 
 nav a:hover {
