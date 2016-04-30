@@ -28,7 +28,6 @@ header {
   font-family: "Amatic SC", cursive;
   color: #fff;
   background-color: #6bd3c2;
-  padding-bottom: 0px;
   text-align: left;
   position: relative;
   text-decoration: none;
@@ -55,7 +54,7 @@ nav li {
 nav a {
   display: block;
   padding: .5em .75em;
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -99,8 +98,8 @@ nav a:hover {
   text-decoration: none;
   font-size: .5rem;
   position: relative;
+  padding: 5px;
   border: 3px solid #ffab55;
-  padding: .6em;
   border-radius: 20px;
   transform: translate(-50%, -50%);
   top: 0%;
@@ -204,6 +203,67 @@ section p {
 }
 
 /* section student experiences */
+
+/* final section */
+
+section p {
+  font: normal 80%/1 sans-serif;
+  text-align: left;
+}
+
+.lastsection ul {
+  display: block;
+}
+
+.lastsection li {
+  height: 450px;
+  width: 100%;
+  position: relative;
+  float: left;
+  list-style: none;
+}
+
+.phototext {
+  font-family: "Amatic SC", cursive;
+  position: absolute;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-text {
+  color: black;
+}
+
+.lastsection-img {
+  position: absolute;
+  width: 85%;
+}
+
+/* final section */
+
+/* footer */
+
+footer {
+  text-align: left;
+  display: inline-block;
+  padding: 1em;
+  font-size: 2rem;
+  font-family: "Amatic SC", cursive;
+  color: #fff;
+  background-color: #6bd3c2;
+  margin-top: 50px;
+}
+
+strong {
+  color: #fff;
+}
+
+.copyright {
+  margin: 0;
+  padding-bottom: 1em;
+}
 
 @media only screen and (min-width: 25em) {
 
